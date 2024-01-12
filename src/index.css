@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+.scrolled {
+  box-shadow: 2px 2px 7px #949494;
+  transition: 0.1s ease-in-out;
+}
+
+.main-nav-container {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 3;
+}
+
+.top-bar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b4747;
+  padding: 10px 40px;
+} 
+
+.top-bar-container h3 {
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+}
+
+.top-bar-container h3:hover {
+  color: #cd8a05;
+  cursor: pointer;
+}
+
+.top-bar-con-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.sign-in-out {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav a{
+  font-weight: 500;
+  font-size: 15px;
+  color: #1b4747;
+}
+
+.header-nav a:hover {
+  color: #cd8a05;
+  font-weight: 500;
+}
+
+.navbar-icons {
+  text-decoration: none;
+}
+
+.home-container {
+  width: calc(100vw - 17px);
+  height: 400px;
+  background-image: url(https://halalholidaycheck.com/assets/public/img/slider/slide-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.home-container h2 {
+  font-family: "Raleway", sans-serif;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 7px #202020;
+  font-size: 35px;
+  margin: 60px 40px 20px auto;
+}
+
+.home-container h3 {
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  width: 500px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 7px #202020;
+  font-size: 25px;
+  margin: 20px 40px 20px auto;
+  line-height: 1.5;
+}
+
+.exploreBtn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  background-color: #1b4747;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.exploreBtn:hover {
+  background-color: #215757;
+  cursor: pointer;
+}
+
+input[type="date"]::before {
+  content: "Check in";
+  position: absolute;
+  color: #999999;
+}
+input[type="date"] {
+  color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "";
+}
+
+.booking-container {
+  width: 70vw;
+  padding: 20px;
+  background-color: #000000a9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  display: flex;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.booking-container button {
+  width: calc(35vw - 20px);
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+
+.booking-container button:hover {
+  cursor: pointer;
+}
+
+.booking-container-1 {
+  background-color: white;
+}
+
+.searchBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.searchBtn button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.searchBtn:hover button {
+  background-color: #215757;
+  cursor: pointer;
+}
+
+.searchBtn:hover .check {
+  background-color: #1b4747;
+  cursor: pointer;
+}
+
+.searchBtn button {
+  width: 100px;
+  background-color: #1b4747;
+}
+
+.check {
+  color: white;
+  background-color: #215757;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  font-family: "Raleway", sans-serif;
+  height: 30px;
+  padding: 10px;
+}
+
+.dealOfWeek {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 100px;
+  color: #1b4747;
+}
+
+.dealOfWeek img {
+  border-radius: 100vw;
+  border: 2px solid white;
+}
+
+.dealOfWeek p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.image-frame {
+  border-radius: 100vw ;
+  display: flex;
+  justify-content: center; 
+  border: 3px solid gray;
+}
+
+.inspiration,
+.early-res,
+.tour {
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tour {
+  margin-top: 70px;
+}
+
+.inspiration h3,
+.early-res h3,
+.tour h3 {
+  font-size: 23px;
+  color: #1b4747;
+}
+
+.inspiration p,
+.early-res p,
+.tour p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 20px;
+} 
+
+
+.inspiration img {
+  height: 180px;
+  width: auto;
+  border-radius: 7px;
+}
+
+.inspiration-flex,
+.early-rez-flex,
+.tour-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insp-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.insp-inner:hover {
+  cursor: pointer;
+}
+
+.insp-inner p {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.res-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px #bbbbbb71;
+}
+
+.eff {
+  overflow: hidden;
+  height: 132px;
+  background-color: black;
+  position: relative;
+}
+
+.eff div {
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding: 7px;
+  background-color: #d89715;
+  z-index: 2;
+  border-bottom-right-radius: 7px;
+}
+
+.eff div p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.res-container img {
+  width: 225px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  transition: 0.25s all ease-in-out;
+}
+
+.res-container:hover img {
+  transform: scale(1.2);
+}
+
+.hotel-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.hotel-name .rating {
+  height: 30px;
+  width: 30px;
+  background-color: #1b4747;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.rating p {
+  color: rgb(255, 255, 255);
+  margin: auto auto 7px auto ;
+}
+
+.hotel-name .name,
+.hotel-name .loca {
+  width: 180px;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hotel-name .loca {
+  font-size: 12px;
+  color: #525252;
+}
+
+.star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  gap: 5px;
+}
+
+.city-container {
+  position: relative;
+}
+
+.city-container:hover {
+  cursor: pointer;
+}
+
+.city-container img {
+  width: 23vw;
+  border-radius: 7px;
+}
+
+.shadow {
+  position: absolute;
+  height: 70px;
+  width: 23vw;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.63), transparent);
+  display: flex;
+}
+
+.shadow p {
+  margin: 13px 27px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px #202020;
+}
